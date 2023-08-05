@@ -6,6 +6,24 @@ spring:
   application:
     name: my-gateway-service
 
+  cloud:
+    gateway:
+      routes:
+        - id: first-service
+          uri: http://localhost:8001/
+          predicates:
+            - Path=/first-service/**
+          filters:
+            - AddRequestHeader=first-request, first-requests-header2
+            - AddResponseHeader=first-response, first-response-header2
+        - id: second-service
+          uri: http://localhost:8002/
+          predicates:
+            - Path=/second-service/**
+          filters:
+            - AddRequestHeader=second-request, second-requests-header2
+            - AddResponseHeader=second-response, second-response-header2
+
 eureka:
   client:
     register-with-eureka: false
