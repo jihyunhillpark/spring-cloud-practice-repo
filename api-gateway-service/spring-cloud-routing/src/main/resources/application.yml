@@ -1,8 +1,15 @@
 server:
   port: 8000
 
+
 spring:
   application:
     name: my-gateway-service
 
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://locahost:8761/eureka
 
