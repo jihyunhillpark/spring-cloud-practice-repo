@@ -1,0 +1,15 @@
+package com.example.springcloudpractice;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+
+@SpringBootApplication
+@EnableEurekaServer
+public class SpringCloudPracticeApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpringCloudPracticeApplication.class, args);
+    }
+
+}
