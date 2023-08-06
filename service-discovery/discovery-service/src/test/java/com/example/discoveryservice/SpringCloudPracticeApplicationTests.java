@@ -1,10 +1,10 @@
-package com.example.springcloudpractice;
+package com.example.discoveryservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringCloudPracticeApplicationTests {
+class DiscoveryServiceApplicationTests {
 
     @Test
     void contextLoads() {
