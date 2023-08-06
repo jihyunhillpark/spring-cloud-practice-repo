@@ -7,4 +7,5 @@
 |  section2-3 | [88de8fe](https://github.com/jihyunhillpark/spring-cloud-practice-repo/commit/88de8fe4e05ec344ec0f4d222269da630043507d) | section2-1 에서의 java코드 설정을 application.yml설정으로 바꿔본다. |
 |  section2-4 | [c52b5be](https://github.com/jihyunhillpark/spring-cloud-practice-repo/commit/c52b5bec4fce1b59827bb725fe9cc944c64bda4c) | section2-2 에서 추가한 filter를 커스텀 filter 방식으로 변경해본다. |
 |  section2-5 | [7ba3558](https://github.com/jihyunhillpark/spring-cloud-practice-repo/commit/7ba355891dcc207a91bd13b8949f38354e2685da) | 글로벌 필터와 second-service에 추가적인 커스텀 필터를 적용해본다. |
-|  section2-6 | [7ebfefb](https://github.com/jihyunhillpark/spring-cloud-practice-repo/commit/7ebfefb32872f2715fb2c3190275653e01dea91f) | [LoadBalacner1] eureka 서비스에 마이크로 서비스들을 등록하고 요청에 상응하는 서버로 포워딩한다.|
+|  section2-6 | [7ebfefb](https://github.com/jihyunhillpark/spring-cloud-practice-repo/commit/7ebfefb32872f2715fb2c3190275653e01dea91f) | [LoadBalancer] eureka 서비스에 마이크로 서비스들(first-service, second-service)을 등록하고 요청에 상응하는 서버로 포워딩한다.|
+|  section2-7 | [fd0b433](https://github.com/jihyunhillpark/spring-cloud-practice-repo/commit/fd0b433cf4382f98109845467fb89d2111d1879d) | [LoadBalancer] first-service의 멀티인스턴스들을 구동할 때  로드밸런싱 기능이 잘 동작하는지 확인하기 위해 인스턴스 고유 정보를 로그로 찍고 이를 응답으로 준다. |
