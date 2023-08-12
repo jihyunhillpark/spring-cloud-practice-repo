@@ -15,4 +15,5 @@
 
 5. With that specific port, make a request!! (Postman, Talend API Tester can be helpful)   
    <img width="902" alt="API call example" src="https://github.com/jihyunhillpark/spring-cloud-practice-repo/assets/29705409/d6b34ca1-5c62-4252-adbd-8af620cd0ba1">
+
    * _you can also check whether it genuinely works or not by looking into DB! h2-console(endpoint ) will be of great help!_
