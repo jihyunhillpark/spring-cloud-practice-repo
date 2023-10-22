@@ -22,11 +22,11 @@ public class WebSecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http, HandlerMappingIntrospector introspector) throws Exception {
         MvcRequestMatcher.Builder mvcMatcherBuilder = new MvcRequestMatcher.Builder(introspector);
         http.csrf().disable();
-        http.authorizeHttpRequests(request -> request
-                .requestMatchers(mvcMatcherBuilder.pattern("/users/**")).permitAll()
-                .requestMatchers(PathRequest.toH2Console()).permitAll()
-                .anyRequest().authenticated()
-        );
+//        http.authorizeHttpRequests(request -> request
+//                .requestMatchers(mvcMatcherBuilder.pattern("/users/**")).permitAll()
+//                .requestMatchers(PathRequest.toH2Console()).permitAll()
+//                .anyRequest().authenticated()
+//        );
         http.headers().frameOptions().disable();
         return http.build();
     }

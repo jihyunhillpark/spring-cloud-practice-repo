@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/user-service")
 @RequiredArgsConstructor
 public class UserController {
 
@@ -26,9 +26,9 @@ public class UserController {
     private final Greeting greeting;
     private final UserService userService;
 
-    @GetMapping("/health_check")
+    @GetMapping("health_check")
     public String status() {
-        return "It's Working in User Service";
+        return String.format("It's Working in User Service PORT %s", env.getProperty("local.server.port"));
     }
 
     @GetMapping("/welcome")
