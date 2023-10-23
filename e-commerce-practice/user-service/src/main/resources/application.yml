@@ -15,7 +15,7 @@ spring:
     driver-class-name: org.h2.Driver
   jpa:
     hibernate:
-      ddl-auto: create-drop # 시작할 때 새로 생성 하고 세션을 마칠 때 스키마를 소멸 시킵니다.
+      ddl-auto: create-drop # 시작ㅁ할 때 새로 생성 하고 세션을 마칠 때 스키마를 소멸 시킵니다.
 
 eureka:
   instance:
