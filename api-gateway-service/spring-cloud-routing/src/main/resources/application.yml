@@ -27,6 +27,12 @@ spring:
             - Path=/catalog-service/**
           filters:
             - CustomFilter
+        - id: order-service
+          uri: lb://ORDER-SERVICE
+          predicates:
+            - Path=/order-service/**
+          filters:
+            - CustomFilter
         - id: first-service
           uri: lb://MY-FIRST-SERVICE
           predicates:
