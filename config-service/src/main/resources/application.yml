@@ -7,5 +7,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/jihyunhillpark/spring-cloud-practice-repo/tree/main/e-commerce-practice
+          uri: https://github.com/jihyunhillpark/spring-cloud-practice-repo.git
           default-label: main
+          search-paths: e-commerce-practice
