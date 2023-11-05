@@ -1,0 +1,11 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jihyunhillpark/spring-cloud-practice-repo/tree/main/e-commerce-practice
+          default-label: main

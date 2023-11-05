@@ -37,6 +37,7 @@ public class WebSecurityConfig {
         http.authorizeHttpRequests(request -> {
             try {
                 request
+                        .requestMatchers(mvcMatcherBuilder.pattern("/actuator/**")).permitAll()
                         .requestMatchers(mvcMatcherBuilder.pattern("/**")).permitAll()
                         .requestMatchers(PathRequest.toH2Console()).permitAll()
                         .requestMatchers(new IpAddressMatcher("127.0.0.1")).permitAll()

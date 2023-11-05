@@ -16,6 +16,8 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create-drop # 시작ㅁ할 때 새로 생성 하고 세션을 마칠 때 스키마를 소멸 시킵니다.
+  config:
+    import: bootstrap.yml
 
 eureka:
   instance:
@@ -33,6 +35,12 @@ logging:
   level:
     com.example.userservice: DEBUG
 
-token:
-  expiration_time: 86400000 # 하루짜리 인증토큰
-  secret: user_token
+
+#token:
+#  expiration_time: 86400000 # 하루짜리 인증토큰
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh, health, beans # refresh : 현재 마이크로 서비스에 명시된 컨피그 서버에서 가지고 와야할 정보 새로 가져 오겠다.
+#  secret: user_token
